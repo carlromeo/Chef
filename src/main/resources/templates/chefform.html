@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Chef Form</h1>
+<form action="#" th:action="@{/process}" th:object="${chef}" method="post">
+    <input type="hidden" th:field="*{id}" />
+    Name :<input type="text" th:field="*{name}" /><br />
+    Dish :<input type="text" th:field="*{dish}" /><br />
+    Description :<input type="text" th:field="*{description}" /><br />
+    Chef :<input type="text" th:field="*{chef}" /><br />
+    <br />
+    <input type="submit" value="Submit" />
+</form>
+</body>
+</html>

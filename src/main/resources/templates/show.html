@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/">Show All Dishes</a><br />
+Name :<span th:text="${chef.name}" ></span><br />
+Dish :<span th:text="${chef.dish}" ></span><br />
+Description :<span th:text="${chef.description}" ></span><br />
+Chef :<span th:text="${chef.chef}" ></span><br />
+<a th:href="@{/delete/{id}(id=${chef.id})}">Delete this dish</a>
+</body>
+</html>
